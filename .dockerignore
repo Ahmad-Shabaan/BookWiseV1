@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+*.build/
+
+# Logs
+*.log
+
+# Environment files
+.env*
+!.env.example
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.swp

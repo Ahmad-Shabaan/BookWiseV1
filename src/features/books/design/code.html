@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#000311",
+                    "on-tertiary": "#001e4a",
+                    "on-background": "#e8eafb",
+                    "on-primary-container": "#0a0081",
+                    "primary-fixed": "#9396ff",
+                    "on-primary": "#0f00a4",
+                    "inverse-on-surface": "#515562",
+                    "secondary-container": "#6f00be",
+                    "tertiary-container": "#4388fd",
+                    "on-secondary": "#33005b",
+                    "on-tertiary-fixed-variant": "#00377b",
+                    "surface-tint": "#a3a6ff",
+                    "error": "#ff6e84",
+                    "error-container": "#a70138",
+                    "surface-container-high": "#1a1f2e",
+                    "on-error-container": "#ffb2b9",
+                    "tertiary-fixed-dim": "#73a2ff",
+                    "surface-variant": "#202535",
+                    "surface-container-lowest": "#000000",
+                    "background": "#0a0e19",
+                    "secondary": "#c180ff",
+                    "outline": "#717583",
+                    "on-surface": "#e8eafb",
+                    "surface-container": "#141927",
+                    "tertiary-dim": "#699cff",
+                    "surface-container-low": "#0f131f",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary-fixed": "#00163b",
+                    "tertiary": "#699cff",
+                    "primary-dim": "#6063ee",
+                    "on-surface-variant": "#a7aaba",
+                    "tertiary-fixed": "#8ab0ff",
+                    "secondary-dim": "#9c48ea",
+                    "on-primary-fixed-variant": "#0e009d",
+                    "error-dim": "#d73357",
+                    "primary-container": "#9396ff",
+                    "primary-fixed-dim": "#8387ff",
+                    "outline-variant": "#444855",
+                    "surface": "#0a0e19",
+                    "secondary-fixed": "#e5c6ff",
+                    "on-secondary-fixed-variant": "#7511c3",
+                    "inverse-surface": "#faf8ff",
+                    "on-secondary-container": "#e9cdff",
+                    "on-secondary-fixed": "#4f0089",
+                    "secondary-fixed-dim": "#dbb4ff",
+                    "primary": "#a3a6ff",
+                    "surface-container-highest": "#202535",
+                    "inverse-primary": "#494bd7",
+                    "surface-dim": "#0a0e19",
+                    "on-error": "#490013",
+                    "surface-bright": "#262c3d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen selection:bg-primary/30">
+<nav class="fixed top-0 w-full z-50 bg-[#0a0e19]/70 backdrop-blur-xl flex justify-between items-center px-8 h-20 w-full max-w-none shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black tracking-tighter bg-gradient-to-r from-[#a3a6ff] to-[#c180ff] bg-clip-text text-transparent">BookWise</span>
+<div class="hidden md:flex gap-6">
+<a class="font-inter tracking-tight headline-lg font-bold text-[#a7aaba] hover:text-[#e8eafb] transition-colors duration-300" href="#">Discover</a>
+<a class="font-inter tracking-tight headline-lg font-bold text-[#a3a6ff] border-b-2 border-[#a3a6ff] pb-1" href="#">Library</a>
+<a class="font-inter tracking-tight headline-lg font-bold text-[#a7aaba] hover:text-[#e8eafb] transition-colors duration-300" href="#">Collections</a>
+<a class="font-inter tracking-tight headline-lg font-bold text-[#a7aaba] hover:text-[#e8eafb] transition-colors duration-300" href="#">Community</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-[#a3a6ff]/10 transition-colors duration-300 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[#a3a6ff]">notifications</span>
+</button>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-outline-variant/30">
+<img class="h-full w-full object-cover" data-alt="Close-up portrait of a professional male user with a clean beard and friendly expression in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_5udUjsgi_6Ps3IoAa5UrPhL8uekcLtI_uPUCQzOMdsBpJpirgT7Pdtaoezmb5WNjswqO9QlpEYsj9VZ1lT5Rq3GRqKlymBx8BYUVQXM7mfYvgHZo8gn8fvTIGOTMgHJI4PP8ZHdKbFAdDw3AOkL3aQtdAxSrhjP3zE_8nXpcEPQ0MT-t1iS6AIHOa-IJxk99dFMjvfVC1fmTZjZX9QK4pf1lCat6njfgJ3421x8O-tktp1SYO34MeoXhRguwsXOvswv29dw4aSk"/>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-12 px-8 max-w-[1600px] mx-auto">
+<header class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="flex-1 max-w-2xl">
+<h1 class="text-4xl font-black tracking-tight mb-6 bg-gradient-to-br from-on-background to-on-surface-variant bg-clip-text text-transparent">Browse Library</h1>
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline">search</span>
+</div>
+<input class="w-full bg-surface-container-highest border-none rounded-xl py-4 pl-12 pr-4 text-on-surface focus:ring-2 focus:ring-primary/30 transition-all placeholder:text-outline-variant" placeholder="Search by title, author, or ISBN..." type="text"/>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<span class="label-sm uppercase tracking-widest font-medium text-on-surface-variant">Sort By</span>
+<div class="flex bg-surface-container rounded-xl p-1">
+<button class="px-6 py-2 rounded-lg text-sm font-semibold bg-surface-container-highest text-primary shadow-sm">Popular</button>
+<button class="px-6 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:text-on-surface transition-colors">Newest</button>
+<button class="px-6 py-2 rounded-lg text-sm font-medium text-on-surface-variant hover:text-on-surface transition-colors">Top Rated</button>
+</div>
+</div>
+</div>
+</header>
+<div class="flex flex-col lg:flex-row gap-8">
+<aside class="w-full lg:w-72 flex-shrink-0 space-y-8">
+<section class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="label-sm uppercase tracking-widest font-bold text-primary mb-6">Genres</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-primary text-on-primary">All Genres</span>
+<span class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-highest text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Fantasy</span>
+<span class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-highest text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Sci-Fi</span>
+<span class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-highest text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Mystery</span>
+<span class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-highest text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Biography</span>
+<span class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-highest text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Horror</span>
+<span class="px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container-highest text-on-surface-variant hover:text-on-surface cursor-pointer transition-colors">Romance</span>
+</div>
+</section>
+<section class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="label-sm uppercase tracking-widest font-bold text-primary mb-6">Rating</h3>
+<div class="space-y-4">
+<div class="relative w-full h-1.5 bg-surface-container-highest rounded-full">
+<div class="absolute top-0 left-0 w-4/5 h-full bg-primary rounded-full"></div>
+<div class="absolute top-1/2 left-[80%] -translate-y-1/2 h-4 w-4 bg-primary rounded-full shadow-lg border-2 border-surface cursor-pointer"></div>
+</div>
+<div class="flex justify-between text-xs font-medium text-on-surface-variant">
+<span>1.0+</span>
+<span>4.0+</span>
+<span>5.0</span>
+</div>
+</div>
+</section>
+<section class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="label-sm uppercase tracking-widest font-bold text-primary mb-6">Publication Year</h3>
+<div class="grid grid-cols-2 gap-3">
+<div class="bg-surface-container-highest p-3 rounded-lg text-center">
+<span class="block text-[10px] text-on-surface-variant uppercase mb-1">From</span>
+<span class="text-sm font-bold">2010</span>
+</div>
+<div class="bg-surface-container-highest p-3 rounded-lg text-center">
+<span class="block text-[10px] text-on-surface-variant uppercase mb-1">To</span>
+<span class="text-sm font-bold">2024</span>
+</div>
+</div>
+</section>
+</aside>
+<div class="flex-1">
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+<article class="group relative bg-surface-container-low rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+<div class="aspect-[2/3] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Classic hardcover book cover with ornate golden patterns on a deep emerald green leather background in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtM_BsVIc2kiPZW3G04-5ShdUfDi1DxAX4AcgzCpx8dg-4B7yPv0cBXQ2YdUbEzQWfubRlJPwFFlDydEQSqXzPpXzMYTYWZWGkJA682s-B5z4KPokZfSklEl0-y-xDTieU5gGM42VNLTOmY7ktbm8CJK5HUDo40i117JmVP7wELFdQ1pRqlsK24wBhr2EBwbcWU3AC4EG2GsJVfPspgFEwjVPp99NgGrcmdoGSNjUoTsulrx-PSxHA2Am7nnWuE47gXnzbND7Dw4w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<button class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-on-primary font-bold rounded-xl text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+                                    Add to Wishlist
+                                </button>
+</div>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">The Echoes of Time</h3>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.9</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Evelyn Sterling</p>
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-tertiary-fixed-variant px-2 py-0.5 bg-tertiary-container/20 rounded">Sci-Fi</span>
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-tertiary-fixed-variant px-2 py-0.5 bg-tertiary-container/20 rounded">New</span>
+</div>
+</div>
+</article>
+<article class="group relative bg-surface-container-low rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+<div class="aspect-[2/3] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close-up of an old vintage book lying on a dark wooden table with warm amber lighting and dust motes in the air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChLJSorhxfHNxtOBQfy_73KBVNLJhcpe4xRaGKv8tlTjaB_j5u0QiefS-KzAl5_gN-4KHZ-7f3Fim5oKvDEBzhsqLiDXKb3iHSVv39iMOfuHCg_VFIBOBI8WDVDdvT3ziaX66LenwnZRXpA9c2nyvcoDSylStOUVBdMGYKTuhcoky4U3-WEBncu1DI1ybGKsRHA1nijlUHMfaZHWySWlGn8XsAPfL4sqajF3qm2IPvujJnSF3vTe4_s4EHILIbLRM8HIfbKpwwdVM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<button class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-on-primary font-bold rounded-xl text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+                                    Add to Wishlist
+                                </button>
+</div>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Beneath the Canopy</h3>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.7</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Marcus Thorne</p>
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-tertiary-fixed-variant px-2 py-0.5 bg-tertiary-container/20 rounded">Mystery</span>
+</div>
+</div>
+</article>
+<article class="group relative bg-surface-container-low rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+<div class="aspect-[2/3] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Abstract book cover design with flowing holographic shapes and vibrant neon blue and purple accents on a black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5E1v7RDhSQ2juxjVRqZclH_HrIYDH9lWXYFTYRSEJG3O1Rc5Nbz2823Aw3rVD4WPgOU58YZPoz0t4_yITomvyaz9odA2OYDEEeoN7CyKK8jjrZ_5xj95J0oDehFgGyT9trpGUwFCeE7TWHZbzUjioxx28QbVwNHVKol8GRVhFOHZImSfVRmDwEMtpm4psVlm2DsGeEosSHLoFnvVQwepLkuJ-g67vcOF1yiOt6dbkEhnY-VTbp6KNDl-mTBVe0lfMhkKOO2bpuVQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<button class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-on-primary font-bold rounded-xl text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+                                    Add to Wishlist
+                                </button>
+</div>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Algorithm of Dreams</h3>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.8</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Sarah J. Miller</p>
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-tertiary-fixed-variant px-2 py-0.5 bg-tertiary-container/20 rounded">Cyberpunk</span>
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-tertiary-fixed-variant px-2 py-0.5 bg-tertiary-container/20 rounded">Bestseller</span>
+</div>
+</div>
+</article>
+<article class="group relative bg-surface-container-low rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+<div class="aspect-[2/3] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern minimalist book cover featuring a single red poppy flower against a stark white textured background with elegant serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpajb6HKCvnv4nLcz41QXvBBMgGywGflqwypbpDMvizJBI0av3oM7tQt9copuUl_JKvp_ncooiNUm1wUBFGN6PioJKh7ofjNZ_hq7YfnMBHvwXGkWqBl-OKDW7zifFnBNoSapb8vB-Zb3Xp2tRdDCK-1CvaCOKua8tZD3vbPuLskIIDZzGkpgQzl9GSOStf2gucijR1QNmiMELAeCK72RGEt6GwuTvD5cv1ZRmLshE0nQEI-m2aYUKdqbezt3p4UYBNzJGKtvs4Ow"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<button class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-on-primary font-bold rounded-xl text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+                                    Add to Wishlist
+                                </button>
+</div>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Whispers in the Wind</h3>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.5</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Julian Thorne</p>
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-tertiary-fixed-variant px-2 py-0.5 bg-tertiary-container/20 rounded">Poetry</span>
+</div>
+</div>
+</article>
+<article class="group relative bg-surface-container-low rounded-2xl overflow-hidden hover:scale-[1.02] transition-all duration-300">
+<div class="aspect-[2/3] relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Dark dramatic book cover with a silhouette of a Gothic castle against a stormy moonlit sky with swirling ravens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRzylPdCEijbmhRZQYI9r2NXBPl5kkPiGuL0JfoFVLf8VecaCOERHs977UBtOxY3n8CJUj_fzVEoSd-fdjWHUF0ygCNrQQHbkzA2l4q4N_hPElF0VvA0JndoH7NVNfdI-cD198fw-eorb9QU2V1X_ZJI0bRXgicWV49ZCO_iDQKllEY13WQtpDigw_OXj7wxGzN0dMmvGzNqSvOB1WkTHBqvHIfSvw6j-IJ_2Iy5CHxzSBCqdGUXbKofyOZGIjbGqmJ7i3Xp_0lB0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+<button class="w-full py-3 bg-gradient-to-r from-primary to-secondary text-on-primary font-bold rounded-xl text-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+                                    Add to Wishlist
+                                </button>
+</div>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">The Shadowed Kingdom</h3>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold">4.6</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Aria Vance</p>
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-tertiary-fixed-variant px-2 py-0.5 bg-tertiary-container/20 rounded">Fantasy</span>
+</div>
+</div>
+</article>
+<div class="col-span-full py-12 flex justify-center">
+<div class="flex gap-4 items-center">
+<button class="h-10 w-10 flex items-center justify-center rounded-full bg-surface-container-highest text-on-surface hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<span class="text-sm font-bold text-on-surface">Page 1 of 42</span>
+<button class="h-10 w-10 flex items-center justify-center rounded-full bg-surface-container-highest text-on-surface hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-[#0a0e19] border-t border-[#444855]/15 flex flex-col md:flex-row justify-between items-center px-12 py-8 w-full">
+<div class="mb-6 md:mb-0">
+<span class="text-lg font-bold text-[#e8eafb]">BookWise</span>
+<p class="label-sm uppercase tracking-widest font-medium text-[#a7aaba] mt-2">© 2024 BookWise. All rights reserved.</p>
+</div>
+<div class="flex gap-8">
+<a class="label-sm uppercase tracking-widest font-medium text-[#a7aaba] hover:text-[#c180ff] transition-colors opacity-80 hover:opacity-100" href="#">About</a>
+<a class="label-sm uppercase tracking-widest font-medium text-[#a7aaba] hover:text-[#c180ff] transition-colors opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="label-sm uppercase tracking-widest font-medium text-[#a7aaba] hover:text-[#c180ff] transition-colors opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="label-sm uppercase tracking-widest font-medium text-[#a7aaba] hover:text-[#c180ff] transition-colors opacity-80 hover:opacity-100" href="#">Support</a>
+</div>
+</footer>
+</body></html>

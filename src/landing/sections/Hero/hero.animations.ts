@@ -1,6 +1,6 @@
 import { motion, prefersReducedMotion } from "@/landing/animations";
 import { useGSAP } from "@gsap/react";
-import gsap from "@/lib/gsap.config";
+import gsap from "@/config/gsap.config";
 import { SplitText } from "gsap/all";
 
 export function useHeroAnimation(

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import PrivateRoute from "../components/guards/PrivateRoute";
-import PublicOnlyRoute from "../components/guards/PublicOnlyRoute";
+import PrivateRoute from "../shared/components/guards/PrivateRoute";
+import PublicOnlyRoute from "../shared/components/guards/PublicOnlyRoute";
 // import RoleRoute from '../components/guards/RoleRoute';
 import Profile from "@/features/profile/pages/Profile";
 import NotFound from "@/features/errors/pages/NotFound";

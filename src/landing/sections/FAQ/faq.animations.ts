@@ -1,6 +1,6 @@
 import { prefersReducedMotion, START_SCROLL_TRIGGER } from "@/landing/animations";
 import { useGSAP } from "@gsap/react";
-import gsap from "@/lib/gsap.config";
+import gsap from "@/config/gsap.config";
 import type React from "react";
 
 export function useFAQAnimations(sectionRef : React.RefObject<HTMLDivElement | null>) {
